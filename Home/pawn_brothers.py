@@ -16,13 +16,10 @@ def safe_pawn(pawn, pawns):
             if sq in pawns:
                 return True
     except TypeError:
-        print(pawn, safe_squares(pawn))
         return False
     return False
 
 def safe_pawns(pawns):
-    for p in pawns:
-        print(safe_squares(p))
     return len([p for p in pawns if safe_pawn(p, pawns)])
 
 if __name__ == '__main__':

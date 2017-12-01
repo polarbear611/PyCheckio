@@ -34,9 +34,6 @@ def friendly_number(number, base=1000, decimals=0, suffix='',
         return "%.0{}f".format(decimals) % number + power_name + suffix
     else:
         return str(int(number)) + power_name + suffix    
-    #print (number, power)
-    
-    #return str(number)
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
